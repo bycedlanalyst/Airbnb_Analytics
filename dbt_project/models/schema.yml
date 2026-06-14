@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: bronze_listings
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_hosts
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_reviews
+    columns:
+      - name: listing_id
+        tests:
+          - not_null
+
+  - name: silver_listings
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: room_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Entire home/apt', 'Private room', 'Shared room', 'Hotel room']
+      - name: price
+        tests:
+          - not_null
