@@ -150,17 +150,9 @@ dbt test
 
 ---
 
-## 👥 Répartition des tâches
+## 👤 Auteur
 
-| Tâche | Responsable |
-|-------|-------------|
-| Structure du projet et Git | |
-| Couche Bronze | |
-| Couche Silver | |
-| Couche Gold | |
-| Tests qualité | |
-| Dashboard Streamlit | |
-| Documentation | |
+Cédric BOIMIN 
 
 ---
 
